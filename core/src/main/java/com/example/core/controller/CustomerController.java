@@ -34,7 +34,7 @@ public class CustomerController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Customer> findById(Long id) {
+    public Optional<Customer> findById(@PathVariable Long id) {
         return customerService.findById(id);
     }
 
